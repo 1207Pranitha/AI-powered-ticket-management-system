@@ -10,8 +10,8 @@ env/
 # Database
 *.db
 
-# Model files (large)
-*.pkl
+# # Model files (large)
+# *.pkl
 
 # OS files
 .DS_Store
