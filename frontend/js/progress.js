@@ -1,5 +1,6 @@
 // API Configuration
-const API_URL = 'http://127.0.0.1:5000/api';
+import API_URL from './config.js';
+
 const token = localStorage.getItem('token');
 const user = JSON.parse(localStorage.getItem('user') || '{}');
 

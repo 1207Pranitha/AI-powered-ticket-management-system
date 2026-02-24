@@ -558,4 +558,10 @@ if __name__ == '__main__':
     print("🗄️  Database: Connected")
     print("="*60 + "\n")
     
+    # For local development
     app.run(debug=True, port=5000)
+else:
+    # For production (Render, Heroku, etc.)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    # App runs via gunicorn in production

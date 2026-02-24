@@ -1,5 +1,5 @@
 // ==================== CONFIGURATION ====================
-const API_URL = 'http://127.0.0.1:5000/api';
+import API_URL from './config.js';
 
 // ==================== CHECK AUTHENTICATION ====================
 const token = localStorage.getItem('token');

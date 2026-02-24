@@ -1,7 +1,5 @@
 // ==================== CONFIGURATION ====================
-const API_URL = 'http://127.0.0.1:5000/api';
-
-// ==================== CHECK AUTHENTICATION ====================
+import API_URL from './config.js';// ==================== CHECK AUTHENTICATION ====================
 const adminToken = localStorage.getItem('adminToken');
 if (!adminToken || adminToken !== 'admin_authenticated') {
     window.location.href = 'home.html';  // ✅ FIXED: Changed from login.html
